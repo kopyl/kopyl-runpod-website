@@ -5,7 +5,7 @@ export const CenteredContainer = ({ children, className, _ref }: any) => {
     <div
       ref={_ref ? _ref : null}
       style={{
-        maxWidth: "1084px",
+        maxWidth: "1064px",
         margin: "0 auto",
       }}
       className={className}
