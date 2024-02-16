@@ -1,5 +1,4 @@
 .tile
-    height: 142px
     flex: 1
     display: flex
     justify-content: space-between
@@ -16,9 +15,23 @@
         &:hover .title
             color: rgba(255, 255, 255, 1)
 
+    height: 142px
+    @media (max-width: $size-brakepoint-mobile)
+        height: auto
+        min-width: max-content
+        gap: 20px
+        padding: 26px 20px
+        font-size: 14px
+        border-radius: 5px
+
     .title
         transition: 0.15s
+        
         align-self: flex-end
+        @media (max-width: $size-brakepoint-mobile)
+            align-self: center
 
     .arrow
         align-self: flex-start
+        @media (max-width: $size-brakepoint-mobile)
+            align-self: center

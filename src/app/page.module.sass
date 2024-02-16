@@ -7,7 +7,10 @@
             display: flex
             flex-direction: column
             position: relative
+            
             padding: 102px 0 133px
+            @media (max-width: $size-brakepoint-mobile)
+                padding: 39px 0 53px
 
         .heroBackgroundImageTop
             width: 100%
@@ -17,10 +20,19 @@
             pointer-events: none
             z-index: -1
 
+            @media (max-width: $size-brakepoint-mobile)
+                opacity: 0
+                animation: fade-in 1s 1s ease-out forwards
+
         .heroBackgroundImageBottom
             width: 100%
             pointer-events: none
             z-index: -1
+
+            @media (max-width: $size-brakepoint-mobile)
+                opacity: 0
+                transform: translateY(-30px)
+                animation: fade-in 1s 1s ease-out forwards
 
         .heroGreeting
             margin-bottom: 33px
@@ -29,6 +41,9 @@
             animation: fade-in-up .5s .2s ease-out forwards
             opacity: 0
 
+            @media (max-width: $size-brakepoint-mobile)
+                display: none
+
         .heroTitle
             margin-bottom: 45px
             text-align: center
@@ -36,20 +51,30 @@
             animation: fade-in-up .5s .4s ease-out forwards
             opacity: 0
 
+            @media (max-width: $size-brakepoint-mobile)
+                padding: 0 10px
+
         .heroButton
             margin: 0 auto
-            width: 100%
             max-width: 392px
-            animation: fade-in-up .5s 1.5s ease-out forwards
             opacity: 0
+
+            width: 100%
+            animation: fade-in-up .5s 1.5s ease-out forwards
+            @media (max-width: $size-brakepoint-mobile)
+                width: auto
+                animation: fade-in-up .5s .6s ease-out forwards
 
         .clients
             background: $color-background-page
             border: 1px solid #15151E
-            border-radius: 13px
             position: relative
             overflow: hidden
             animation: fade-in-up 1s ease-out
+            
+            border-radius: 13px
+            @media (max-width: $size-brakepoint-mobile)
+                border-radius: 8px
 
             .blurCircle
                 position: absolute
@@ -65,13 +90,19 @@
                 display: flex
                 justify-content: space-between
                 align-items: center
-                padding: 33px 33px 33px 42px
                 color: rgba(255, 255, 255, .9)
+                
+                padding: 33px 33px 33px 42px
+                @media (max-width: $size-brakepoint-mobile)
+                    padding: 22px 22px 22px 30px
 
             .tiles
                 display: flex
                 padding: 0 9px 9px 9px
                 gap: 9px
+
+                @media (max-width: $size-brakepoint-mobile)
+                    overflow-x: auto
 
 
 
@@ -82,3 +113,10 @@
     to
         opacity: 1
         transform: translateY(0)
+
+
+@keyframes fade-in
+    from
+        opacity: 0
+    to
+        opacity: 1

@@ -1,4 +1,9 @@
 .header
+    @media (max-width: $size-brakepoint-mobile)
+        .safeArea
+            margin: 0
+
+.headerContainer
     display: flex
     justify-content: space-between
     align-items: center
@@ -7,12 +12,18 @@
         display: flex
         align-items: center
         gap: 22px
-        padding: 29px 0
+        padding: 30px 0
+
+        @media (max-width: $size-brakepoint-mobile)
+            padding: 30px
 
         p
             color: rgba(255, 255, 255, 1)
             font-size: 21px
             letter-spacing: $font-letter-spacing-titles
+
+            @media (max-width: $size-brakepoint-mobile)
+                display: none
 
 .nav
     font-size: 14px
@@ -27,7 +38,7 @@
         transition: 0.15s
         cursor: pointer
         transition: 0.15s
-        padding: 33px 15px
+        padding: 34px 15px
         border-bottom: 2px solid transparent
         position: relative
 
@@ -54,3 +65,24 @@
 
             &:hover:not(.active)
                 color: rgba(255, 255, 255, 1)
+
+
+
+.heroGreeting
+    @media (min-width: $size-brakepoint-mobile)
+        display: none
+    
+    font-size: 14px
+    color: rgba(255, 255, 255, 1)
+
+
+.hireButton
+    @media (max-width: $size-brakepoint-mobile)
+        display: none
+
+
+.burger
+    @media (min-width: $size-brakepoint-mobile)
+        display: none
+
+    padding: 30px

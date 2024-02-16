@@ -1,11 +1,11 @@
 import styles from "./buttons.module.sass";
 import Link from "next/link";
 
-export const SecondaryButton = ({ children }: any) => {
+export const SecondaryButton = ({ children, className }: any) => {
   return (
     <Link
       href="/contacts"
-      className={`${styles.secondaryButton} ${styles.button}`}
+      className={`${styles.secondaryButton} ${styles.button} ${className}`}
     >
       {children}
     </Link>

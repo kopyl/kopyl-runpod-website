@@ -2,7 +2,10 @@
     padding: 13px 17px
     font-size: 14px
     color: rgba(255, 255, 255, 1)
+    
     border-radius: 7px
+    @media (max-width: $size-brakepoint-mobile)
+        border-radius: 5px
 
 
 .secondaryButton
@@ -25,6 +28,5 @@
     &:hover
         @media (min-width: $size-brakepoint-mobile)
             cursor: pointer
-            // background: #6A07CC
             border: 1px solid #824EDC
             background: $color-background-page

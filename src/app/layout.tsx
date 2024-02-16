@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./reset.sass";
 import "./globals.sass";
-import { CenteredContainer, SideSafeArea } from "@components/util/util";
 import { Header } from "@components/header";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,11 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <header className="header">
-          <SideSafeArea>
-            <CenteredContainer>
-              <Header />
-            </CenteredContainer>
-          </SideSafeArea>
+          <Header />
         </header>
         {children}
       </body>
