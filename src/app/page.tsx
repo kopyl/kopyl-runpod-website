@@ -60,6 +60,44 @@ export default function Home() {
           </SideSafeArea>
         </div>
       </div>
+      <div className={styles.stack} id="stack">
+        <SideSafeArea>
+          <CenteredContainer>
+            <h2 className={styles.stackHeading}>My stack</h2>
+            <div className={styles.stackTiles}>
+              <div
+                className={`${styles.stackRow} ${styles.stackBackendAndFrontend}`}
+              >
+                <div className={`${styles.stackTile} ${styles.stackBackend}`}>
+                  Back
+                </div>
+                <div className={`${styles.stackTile} ${styles.stackFrontend}`}>
+                  Front
+                </div>
+              </div>
+              <div className={`${styles.stackRow} ${styles.stackMLAndCloud}`}>
+                <div className={`${styles.stackTile} ${styles.stackML}`}>
+                  ML
+                </div>
+                <div className={`${styles.stackTile} ${styles.stackCloud}`}>
+                  Cloud
+                </div>
+              </div>
+              <div className={`${styles.stackRow} ${styles.stackTest}`}>
+                <div className={`${styles.stackTile} ${styles.stackTestOne}`}>
+                  One
+                </div>
+                <div className={`${styles.stackTile} ${styles.stackTestTwo}`}>
+                  Two
+                </div>
+                <div className={`${styles.stackTile} ${styles.stackTestThree}`}>
+                  Three
+                </div>
+              </div>
+            </div>
+          </CenteredContainer>
+        </SideSafeArea>
+      </div>
     </main>
   );
 }
