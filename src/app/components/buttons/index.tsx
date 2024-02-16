@@ -11,3 +11,14 @@ export const SecondaryButton = ({ children }: any) => {
     </Link>
   );
 };
+
+export const PrimaryButton = ({ children, className }: any) => {
+  return (
+    <Link
+      href="/contacts"
+      className={`${styles.primaryButton} ${styles.button} ${className}`}
+    >
+      {children}
+    </Link>
+  );
+};

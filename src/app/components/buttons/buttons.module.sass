@@ -14,4 +14,17 @@
             cursor: pointer
             background: #6A07CC
             border: 1px solid transparent
-        
+
+
+.primaryButton
+    transition: 0.15s
+    background: #6A07CC
+    text-align: center
+    border: 1px solid transparent
+    
+    &:hover
+        @media (min-width: $size-brakepoint-mobile)
+            cursor: pointer
+            // background: #6A07CC
+            border: 1px solid #824EDC
+            background: $color-background-page
