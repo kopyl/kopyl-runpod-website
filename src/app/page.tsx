@@ -18,7 +18,7 @@ export default function Home() {
                 Hi I’m a RunPod engineer 👋
               </h4>
               <h1 className={styles.heroTitle}>
-                I train and deploy AI models to RunPod
+                I train and deploy AI to RunPod
               </h1>
               <PrimaryButton className={styles.heroButton}>
                 Book a call with me
