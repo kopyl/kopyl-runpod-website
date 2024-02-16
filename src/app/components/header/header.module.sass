@@ -1,0 +1,56 @@
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: -3px
+
+    .logotype
+        display: flex
+        align-items: center
+        gap: 22px
+        padding: 29px 0
+
+        p
+            color: rgba(255, 255, 255, 1)
+            font-size: 21px
+            letter-spacing: -2%
+
+.nav
+    font-size: 14px
+    
+    @media (max-width: 768px)
+        display: none
+
+.navList
+    display: flex
+
+    .navLink
+        transition: 0.15s
+        cursor: pointer
+        transition: 0.15s
+        padding: 33px 15px
+        border-bottom: 2px solid transparent
+        position: relative
+
+        &::after
+            content: ''
+            display: block
+            transform: scaleX(0)
+            width: calc(100% - 29px)
+            height: 1px
+            background: #3B3B49
+            transition: 0.15s
+            position: absolute
+            bottom: 0
+            transform-origin: center
+            opacity: 0
+
+        &:hover::after, &.active::after
+            transform: scaleX(1)
+            opacity: 1
+
+        &:hover:not(.active)::after
+            background: #824EDC
+
+        &:hover:not(.active)
+            color: rgba(255, 255, 255, 1)
