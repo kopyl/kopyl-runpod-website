@@ -9,11 +9,12 @@
     border-radius: 7px
     transition: 0.15s
 
-    &:hover
-        border: 1px solid #824EDC
+    @media (min-width: $size-brakepoint-mobile)
+        &:hover
+            border: 1px solid #824EDC
 
-    &:hover .title
-        color: rgba(255, 255, 255, 1)
+        &:hover .title
+            color: rgba(255, 255, 255, 1)
 
     .title
         transition: 0.15s
