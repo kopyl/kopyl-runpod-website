@@ -68,30 +68,28 @@ export default function Home() {
               <div
                 className={`${styles.stackRow} ${styles.stackBackendAndFrontend}`}
               >
-                <div className={`${styles.stackTile} ${styles.stackBackend}`}>
-                  Back
-                </div>
-                <div className={`${styles.stackTile} ${styles.stackFrontend}`}>
-                  Front
-                </div>
+                <div
+                  className={`${styles.stackTile} ${styles.stackBackend}`}
+                ></div>
+                <div
+                  className={`${styles.stackTile} ${styles.stackFrontend}`}
+                ></div>
               </div>
               <div className={`${styles.stackRow} ${styles.stackMLAndCloud}`}>
-                <div className={`${styles.stackTile} ${styles.stackML}`}>
-                  ML
-                </div>
-                <div className={`${styles.stackTile} ${styles.stackCloud}`}>
-                  Cloud
-                </div>
+                <div className={`${styles.stackTile} ${styles.stackML}`}></div>
+                <div
+                  className={`${styles.stackTile} ${styles.stackCloud}`}
+                ></div>
               </div>
-              <div className={`${styles.stackRow} ${styles.stackTest}`}>
+              <div className={`${styles.stackRow} ${styles.stackFlexTest}`}>
                 <div className={`${styles.stackTile} ${styles.stackTestOne}`}>
-                  One
+                  One (flex)
                 </div>
                 <div className={`${styles.stackTile} ${styles.stackTestTwo}`}>
-                  Two
+                  Two (flex)
                 </div>
                 <div className={`${styles.stackTile} ${styles.stackTestThree}`}>
-                  Three
+                  Three (flex)
                 </div>
               </div>
             </div>
