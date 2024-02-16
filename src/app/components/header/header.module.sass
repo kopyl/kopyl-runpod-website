@@ -45,12 +45,13 @@
             transform-origin: center
             opacity: 0
 
-        &:hover::after, &.active::after
-            transform: scaleX(1)
-            opacity: 1
+        @media (min-width: $size-brakepoint-mobile)
+            &:hover::after, &.active::after
+                transform: scaleX(1)
+                opacity: 1
 
-        &:hover:not(.active)::after
-            background: #824EDC
+            &:hover:not(.active)::after
+                background: #824EDC
 
-        &:hover:not(.active)
-            color: rgba(255, 255, 255, 1)
+            &:hover:not(.active)
+                color: rgba(255, 255, 255, 1)

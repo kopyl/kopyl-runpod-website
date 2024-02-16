@@ -10,7 +10,8 @@
     border: 1px solid #824EDC
     
     &:hover
-        cursor: pointer
-        background: #6A07CC
-        border: 1px solid transparent
+        @media (min-width: $size-brakepoint-mobile)
+            cursor: pointer
+            background: #6A07CC
+            border: 1px solid transparent
         
