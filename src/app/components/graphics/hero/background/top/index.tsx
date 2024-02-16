@@ -4,7 +4,6 @@ export const HeroBackgroundTop = ({ className }: any) => {
   return (
     <svg
       width="1064"
-      height="425"
       viewBox="0 0 1064 425"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
