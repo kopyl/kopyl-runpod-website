@@ -108,11 +108,17 @@
 
     .stack
         margin-top: -193px
+        
         padding-top: 199px
+        @media (max-width: $size-brakepoint-mobile)
+            padding-top: 125px
 
         .stackHeading
             text-align: center
+            
             margin-bottom: 82px
+            @media (max-width: $size-brakepoint-mobile)
+                margin-bottom: 42px
 
         .stackTiles
             display: flex
