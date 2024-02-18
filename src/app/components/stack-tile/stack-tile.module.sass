@@ -1,0 +1,39 @@
+.tile
+    display: flex
+    flex-direction: column
+    gap: 73px
+    padding: 42px
+    background: $color-background-page
+    border: 1px solid #15151E
+    border-radius: 13px
+    width: calc((100% - 24px) / 3)
+    position: relative
+    overflow: hidden
+    color: rgba(255, 255, 255, .9)
+
+    .stackBlurCircle
+        position: absolute
+        width: 546px
+        height: 546px
+        background: var(--color-blur)
+        left: 50%
+        transform: translateX(-50%)
+        filter: blur(500px)
+        top: -600px
+        opacity: 0.4
+
+    .stackTileHeading
+        display: flex
+        gap: 22px
+        align-items: center
+        font-size: 21px
+
+    .stackTileContent
+        display: flex
+        gap: 9px
+        font-size: 16px
+
+        p
+            padding: 13px 17px
+            border: 1px solid #15151E
+            border-radius: 7px

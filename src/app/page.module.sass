@@ -117,23 +117,18 @@
         .stackTiles
             display: flex
             flex-direction: column
-            gap: 9px
+            gap: 12px
 
             .stackRow
-                display: grid
-                grid-template-columns: repeat(3, 1fr)
-                gap: 9px
+                display: flex
+                gap: 12px
 
-            .stackTile
-                height: 100px
-                background: #1a1a25
-                flex: 1
+            .stackBackend
+                opacity: 1
+                flex: 2
 
-                &.stackBackend
-                    grid-column: 1 / 3
-
-                &.stackCloud
-                    grid-column: 2 / 4
+            .stackCloud
+                flex: 2
 
             .stackFlexTest
                 display: flex

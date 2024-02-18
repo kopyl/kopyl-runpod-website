@@ -5,6 +5,7 @@ import { PrimaryButton, SecondaryButton } from "@components/buttons";
 import { HeroBackgroundTop } from "@components/graphics/hero/background/top";
 import { HeroBackgroundBottom } from "@components/graphics/hero/background/bottom";
 import { ClientsTile } from "@components/clients-tile/hero";
+import { StackTile } from "@components/stack-tile";
 
 export default function Home() {
   return (
@@ -68,29 +69,46 @@ export default function Home() {
               <div
                 className={`${styles.stackRow} ${styles.stackBackendAndFrontend}`}
               >
-                <div
-                  className={`${styles.stackTile} ${styles.stackBackend}`}
-                ></div>
-                <div
-                  className={`${styles.stackTile} ${styles.stackFrontend}`}
-                ></div>
+                <StackTile
+                  className={styles.stackBackend}
+                  iconName="backend"
+                  techList={[
+                    "RunPod",
+                    "Python",
+                    "Docker",
+                    "MongoDB",
+                    "Next.js",
+                  ]}
+                  blurColor="#824FDC"
+                >
+                  Backend
+                </StackTile>
+                <StackTile
+                  className={styles.stackFrontend}
+                  iconName="frontend"
+                  techList={["Next.js", "Angular"]}
+                  blurColor="#DCB54F"
+                >
+                  Frontend
+                </StackTile>
               </div>
               <div className={`${styles.stackRow} ${styles.stackMLAndCloud}`}>
-                <div className={`${styles.stackTile} ${styles.stackML}`}></div>
-                <div
-                  className={`${styles.stackTile} ${styles.stackCloud}`}
-                ></div>
-              </div>
-              <div className={`${styles.stackRow} ${styles.stackFlexTest}`}>
-                <div className={`${styles.stackTile} ${styles.stackTestOne}`}>
-                  One (flex)
-                </div>
-                <div className={`${styles.stackTile} ${styles.stackTestTwo}`}>
-                  Two (flex)
-                </div>
-                <div className={`${styles.stackTile} ${styles.stackTestThree}`}>
-                  Three (flex)
-                </div>
+                <StackTile
+                  className={styles.stackML}
+                  iconName="ml"
+                  techList={["PyTorch"]}
+                  blurColor="#DC4F71"
+                >
+                  ML
+                </StackTile>
+                <StackTile
+                  className={styles.stackCloud}
+                  iconName="cloud"
+                  techList={["AWS", "Azure", "Google Could"]}
+                  blurColor="#4EA0DC"
+                >
+                  Cloud
+                </StackTile>
               </div>
             </div>
           </CenteredContainer>
