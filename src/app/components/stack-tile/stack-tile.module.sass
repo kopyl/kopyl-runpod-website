@@ -1,15 +1,22 @@
 .tile
     display: flex
     flex-direction: column
-    gap: 73px
-    padding: 42px
     background: $color-background-page
     border: 1px solid #15151E
-    border-radius: 13px
     width: calc((100% - 24px) / 3)
     position: relative
     overflow: hidden
     color: rgba(255, 255, 255, .9)
+    justify-content: space-between
+    
+    padding: 42px
+    border-radius: 13px
+    gap: 73px
+    @media (max-width: $size-brakepoint-mobile)
+        border-radius: 8px
+        padding: 30px 10px 10px 10px
+        gap: 30px
+        width: 100%
 
     .stackBlurCircle
         position: absolute
@@ -28,12 +35,32 @@
         align-items: center
         font-size: 21px
 
+        @media (max-width: $size-brakepoint-mobile)
+            padding: 0 20px
+
     .stackTileContent
         display: flex
         gap: 9px
         font-size: 16px
+        flex-wrap: wrap
+        
+        @media (max-width: $size-brakepoint-mobile)
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
 
-        p
+        .tech
             padding: 13px 17px
             border: 1px solid #15151E
+            min-width: max-content
+            
             border-radius: 7px
+            @media (max-width: $size-brakepoint-mobile)
+                border-radius: 5px
+                display: flex
+                justify-content: center
+
+                &:nth-last-child(1)
+                    grid-column: 1 / -1
+
+                &:nth-child(2)
+                    grid-column: auto
