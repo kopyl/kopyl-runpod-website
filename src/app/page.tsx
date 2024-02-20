@@ -6,6 +6,7 @@ import { HeroBackgroundTop } from "@components/graphics/hero/background/top";
 import { HeroBackgroundBottom } from "@components/graphics/hero/background/bottom";
 import { ClientsTile } from "@components/clients-tile/hero";
 import { StackTile } from "@components/stack-tile";
+import { ModelTile } from "@components/model-tile";
 
 export default function Home() {
   return (
@@ -64,7 +65,7 @@ export default function Home() {
       <div className={styles.stack} id="stack">
         <SideSafeArea>
           <CenteredContainer>
-            <h2 className={styles.stackHeading}>My stack</h2>
+            <h2 className={styles.stackTitle}>My stack</h2>
             <div className={styles.stackTiles}>
               <div
                 className={`${styles.stackRow} ${styles.stackBackendAndFrontend}`}
@@ -113,6 +114,52 @@ export default function Home() {
             </div>
           </CenteredContainer>
         </SideSafeArea>
+        <div className={styles.models} id="models">
+          <SideSafeArea>
+            <CenteredContainer>
+              <h2 className={styles.modelsTitle}>
+                Type of models I deploy and train
+              </h2>
+              <div className={styles.modelTiles}>
+                <ModelTile
+                  className={styles.modelTile}
+                  iconName="image"
+                  subModelsList={[
+                    "Stable Diffusion",
+                    "ControlNet",
+                    "Image classification",
+                    "Object detection (YOLO)",
+                  ]}
+                >
+                  Image
+                </ModelTile>
+                <ModelTile
+                  className={styles.modelTile}
+                  iconName="text"
+                  subModelsList={[
+                    "LLM",
+                    "Speech to text",
+                    "Text to speech",
+                    "Text classification",
+                  ]}
+                >
+                  Text
+                </ModelTile>
+                <ModelTile
+                  className={styles.modelTile}
+                  iconName="other"
+                  subModelsList={[
+                    "Recommender systems",
+                    "Speech to speech",
+                    "Anything you can find on HuggingFace",
+                  ]}
+                >
+                  Other
+                </ModelTile>
+              </div>
+            </CenteredContainer>
+          </SideSafeArea>
+        </div>
       </div>
     </main>
   );
