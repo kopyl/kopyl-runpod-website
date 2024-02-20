@@ -27,7 +27,7 @@ export const StackTile = ({
         />
         <p>{children}</p>
       </div>
-      <div className={styles.stackTileContent}>
+      <div className={styles.techList}>
         {techList.map((tech: string, index: number) => (
           <div key={index} className={styles.tech}>
             <p>{tech}</p>
