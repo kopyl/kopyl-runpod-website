@@ -1,18 +1,26 @@
 .tile
     flex: 1
     display: flex
-    padding: 42px
-    gap: 72px
     flex-direction: column
     justify-content: space-between
     border: 1px solid #15151E
     border-radius: 13px
+    
+    padding: 42px
+    gap: 72px
+    @media (max-width: $size-brakepoint-mobile)
+        padding: 30px 30px 40px 30px
+        gap: 58px
 
     .modelTileHeading
         display: flex
-        gap: 22px
         align-items: center
         font-size: 21px
+        
+        gap: 22px
+        @media (max-width: $size-brakepoint-mobile)
+            font-size: 18px
+            gap: 18px
 
     .subModelsList
         display: flex
