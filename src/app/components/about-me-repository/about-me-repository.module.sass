@@ -1,7 +1,6 @@
 .aboutMeRepository
     padding: 13px 17px
     border: 1px solid #15151E
-    border-radius: 7px
     display: flex
     align-items: center
     gap: 17px
@@ -10,6 +9,7 @@
     z-index: 1
     min-width: max-content
 
+    border-radius: 7px
     @media (min-width: 768px)
         &:hover
             cursor: pointer
@@ -19,6 +19,8 @@
         &:hover .whiteArrow
             opacity: 1
 
+    @media (max-width: 768px)
+        border-radius: 5px
 
     .whiteArrow
         position: absolute

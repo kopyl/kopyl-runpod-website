@@ -172,26 +172,41 @@
         .aboutMeInfoTiles
             display: flex
             flex-direction: column
+            
             gap: 12px
+            @media (max-width: $size-brakepoint-mobile)
+                gap: 10px
 
             .aboutMeInfoTopTileRow
                 display: flex
                 flex: 1
+
                 gap: 12px
+                @media (max-width: $size-brakepoint-mobile)
+                    gap: 10px
+                    flex-direction: column
 
                 .aboutMeInfoTopLeftTileColumn
                     flex: 1
                     display: flex
                     flex-direction: column
+
                     gap: 12px
+                    @media (max-width: $size-brakepoint-mobile)
+                        gap: 10px
 
                     .aboutMeInfoOpenSourceTile
-                        padding: 39px 42px 42px 42px
                         border: 1px solid #15151E
-                        border-radius: 13px
                         display: flex
                         flex-direction: column
+                        
+                        border-radius: 13px
+                        padding: 39px 42px 42px 42px
                         gap: 72px
+                        @media (max-width: $size-brakepoint-mobile)
+                            border-radius: 10px
+                            padding: 30px 0px 10px 0px
+                            gap: 60px
                         
                         position: relative
                         overflow: hidden
@@ -205,24 +220,43 @@
                             opacity: 0.2
                             pointer-events: none
                             z-index: 2
+                            
+                            @media (max-width: $size-brakepoint-mobile)
+                                border-radius: 9px
 
                         .aboutMeOpenSourceTitle
                             display: flex
                             align-items: center
                             gap: 22px
 
+                            @media (max-width: $size-brakepoint-mobile)
+                                padding: 0 30px
+
                         .aboutMeRepositories
                             display: flex
                             gap: 9px
                             align-items: center
+                            
                             flex-wrap: wrap
+                            @media (max-width: $size-brakepoint-mobile)
+                                flex-wrap: nowrap
+                                overflow-x: auto
+                                padding: 0 10px
 
                 .aboutMeFromUkraine
                     padding: 42px
                     border: 1px solid #15151E
-                    border-radius: 13px
                     display: flex
                     flex-direction: column
+
+                    border-radius: 13px
+                    @media (max-width: $size-brakepoint-mobile)
+                        padding: 30px
+                        border-radius: 10px
+
+                    h3
+                        @media (max-width: $size-brakepoint-mobile)
+                            text-align: center
 
                     position: relative
                     overflow: hidden
@@ -240,12 +274,17 @@
                     display: flex
                     justify-content: space-between
                     align-items: center
-                    width: 346px
-                    padding: 62px 42px 45px 42px
                     border: 1px solid #15151E
-                    border-radius: 13px
                     display: flex
                     flex-direction: column
+                    
+                    width: 346px
+                    padding: 62px 42px 45px 42px
+                    border-radius: 13px
+                    @media (max-width: $size-brakepoint-mobile)
+                        width: auto
+                        padding: 62px 0
+                        border-radius: 10px
 
                     position: relative
                     overflow: hidden
@@ -262,27 +301,43 @@
                     .aboutMeRunpodTitle
                         display: flex
                         align-items: center
-                        flex-direction: column
                         gap: 22px
+
+                        flex-direction: column
+                        @media (max-width: $size-brakepoint-mobile)
+                            flex: 1
 
                     span
                         font-size: 14px
                         position: relative
                         top: -4px
 
+                        @media (max-width: $size-brakepoint-mobile)
+                            display: none
+
 
         .aboutMeInfoBottomTileRow
-            padding: 39px 42px 42px 42px
             border: 1px solid #15151E
-            border-radius: 13px
             display: flex
             flex-direction: column
-            gap: 72px
+            gap: 30px
+            
+            padding: 39px 42px 42px 42px
+            border-radius: 13px
+            @media (max-width: $size-brakepoint-mobile)
+                padding: 30px 10px 10px 10px
+                border-radius: 10px
+
+            & > h3
+                @media (max-width: $size-brakepoint-mobile)
+                    text-align: center
 
             .aboutMeStartups
                 display: flex
-                align-items: center
                 gap: 12px
+
+                @media (max-width: $size-brakepoint-mobile)
+                    flex-direction: column
 
                 .startup
                     flex: 1
@@ -291,9 +346,12 @@
                     gap: 12px
                     padding: 26px
                     border: 1px solid #15151E
-                    border-radius: 7px
                     gap: 54px
                     transition: 0.15s
+                    
+                    border-radius: 7px
+                    @media (max-width: $size-brakepoint-mobile)
+                        border-radius: 5px
 
                     @media (min-width: 768px)
                         &:hover
