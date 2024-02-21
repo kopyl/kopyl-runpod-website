@@ -3,6 +3,7 @@
     @media (max-width: $size-brakepoint-mobile)
         padding-bottom: 101px
 
+
     .hero
         opacity: 1
 
@@ -154,6 +155,162 @@
                 min-width: 346px
                 @media (max-width: $size-brakepoint-mobile)
                     min-width: 100%
+
+    
+    .aboutMe
+        padding-top: 197px
+        @media (max-width: $size-brakepoint-mobile)
+            padding-top: 95px
+
+        .aboutMeTitle
+            text-align: center
+            margin-bottom: 82px
+            @media (max-width: $size-brakepoint-mobile)
+                margin-bottom: 42px
+
+
+        .aboutMeInfoTiles
+            display: flex
+            flex-direction: column
+            gap: 12px
+
+            .aboutMeInfoTopTileRow
+                display: flex
+                flex: 1
+                gap: 12px
+
+                .aboutMeInfoTopLeftTileColumn
+                    flex: 1
+                    display: flex
+                    flex-direction: column
+                    gap: 12px
+
+                    .aboutMeInfoOpenSourceTile
+                        padding: 39px 42px 42px 42px
+                        border: 1px solid #15151E
+                        border-radius: 13px
+                        display: flex
+                        flex-direction: column
+                        gap: 72px
+                        
+                        position: relative
+                        overflow: hidden
+                        .aboutMeBlurCircle
+                            position: absolute
+                            top: 0
+                            left: 0
+                            bottom: 0
+                            right: 0
+                            background: radial-gradient(94.4% 292.76% at 50% 198.03%, #D7D7D7 0%, rgba(0, 0, 10, 0) 100%)
+                            opacity: 0.2
+                            pointer-events: none
+                            z-index: 2
+
+                        .aboutMeOpenSourceTitle
+                            display: flex
+                            align-items: center
+                            gap: 22px
+
+                        .aboutMeRepositories
+                            display: flex
+                            gap: 9px
+                            align-items: center
+
+                .aboutMeFromUkraine
+                    padding: 42px
+                    border: 1px solid #15151E
+                    border-radius: 13px
+                    display: flex
+                    flex-direction: column
+
+                    position: relative
+                    overflow: hidden
+                    .aboutMeBlurCircle
+                        position: absolute
+                        top: 0
+                        left: 0
+                        bottom: 0
+                        right: 0
+                        background: linear-gradient(90deg, #FFD600 -16.34%, #0085FF 100%)
+                        opacity: 0.2
+                        pointer-events: none
+
+                .aboutMeRunpod
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    width: 346px
+                    padding: 62px 42px 45px 42px
+                    border: 1px solid #15151E
+                    border-radius: 13px
+                    display: flex
+                    flex-direction: column
+
+                    position: relative
+                    overflow: hidden
+                    .aboutMeBlurCircle
+                        position: absolute
+                        top: 0
+                        left: 0
+                        bottom: 0
+                        right: 0
+                        background: radial-gradient(142.39% 142.39% at 50% 118.53%, #824FDC 0%, rgba(0, 0, 10, 0) 100%)
+                        opacity: 0.2
+                        pointer-events: none
+                    
+                    .aboutMeRunpodTitle
+                        display: flex
+                        align-items: center
+                        flex-direction: column
+                        gap: 22px
+
+                    span
+                        font-size: 14px
+                        position: relative
+                        top: -4px
+
+
+        .aboutMeInfoBottomTileRow
+            padding: 39px 42px 42px 42px
+            border: 1px solid #15151E
+            border-radius: 13px
+            display: flex
+            flex-direction: column
+            gap: 72px
+
+            .aboutMeStartups
+                display: flex
+                align-items: center
+                gap: 12px
+
+                .startup
+                    flex: 1
+                    display: flex
+                    flex-direction: column
+                    gap: 12px
+                    padding: 26px
+                    border: 1px solid #15151E
+                    border-radius: 7px
+                    gap: 54px
+
+                    @media (min-width: 768px)
+                        &:hover
+                            cursor: pointer
+                            border: 1px solid #824EDC
+                            color: rgba(255, 255, 255, 1)
+
+                    .startupTitle
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+
+                    .startupInfo
+                        display: flex
+                        justify-content: space-between
+                        font-size: 14px
+                        color: rgba(255, 255, 255, .6)
+
+    
 
 
 

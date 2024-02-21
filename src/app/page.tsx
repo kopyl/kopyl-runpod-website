@@ -7,6 +7,8 @@ import { HeroBackgroundBottom } from "@components/graphics/hero/background/botto
 import { ClientsTile } from "@components/clients-tile/hero";
 import { StackTile } from "@components/stack-tile";
 import { ModelTile } from "@components/model-tile";
+import { Repository } from "@components/about-me-repository";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -154,6 +156,104 @@ export default function Home() {
                 >
                   Other
                 </ModelTile>
+              </div>
+            </CenteredContainer>
+          </SideSafeArea>
+        </div>
+        <div className={styles.aboutMe} id="aboutMe">
+          <SideSafeArea>
+            <CenteredContainer>
+              <h2 className={styles.aboutMeTitle}>About me</h2>
+              <div className={styles.aboutMeInfoTiles}>
+                <div className={styles.aboutMeInfoTopTileRow}>
+                  <div className={styles.aboutMeInfoTopLeftTileColumn}>
+                    <div className={styles.aboutMeInfoOpenSourceTile}>
+                      <div className={styles.aboutMeBlurCircle} />
+                      <div className={styles.aboutMeOpenSourceTitle}>
+                        <Image
+                          src="/about-me-icons/github.svg"
+                          alt="github"
+                          width={25}
+                          height={25}
+                        />
+                        <h3>I contribute to open source</h3>
+                      </div>
+                      <div className={styles.aboutMeRepositories}>
+                        <Repository href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">
+                          AUTOMATIC1111
+                        </Repository>
+                        <Repository href="https://github.com/siliconflow/onediff">
+                          onediff
+                        </Repository>
+                        <Repository href="https://github.com/PixArt-alpha/PixArt-alpha">
+                          PixArt-alpha
+                        </Repository>
+                      </div>
+                    </div>
+                    <div className={styles.aboutMeFromUkraine}>
+                      <div className={styles.aboutMeBlurCircle} />
+                      <h3>I’m from Ukraine 🇺🇦</h3>
+                    </div>
+                  </div>
+                  <div className={styles.aboutMeRunpod}>
+                    <div className={styles.aboutMeBlurCircle} />
+                    <div className={styles.aboutMeRunpodTitle}>
+                      <Image
+                        src="/about-me-icons/runpod.svg"
+                        alt="runpod"
+                        width={25}
+                        height={27}
+                      />
+                      <h3>I spent $2000+ on Runpod</h3>
+                    </div>
+                    <span>of my own money</span>
+                  </div>
+                </div>
+                <div className={styles.aboutMeInfoBottomTileRow}>
+                  <h3>I have 2 startups</h3>
+                  <div className={styles.aboutMeStartups}>
+                    <Link
+                      href="https://logojinn.com/"
+                      passHref
+                      target="_blank"
+                      className={styles.startup}
+                    >
+                      <div className={styles.startupTitle}>
+                        <h4>idied.org</h4>
+                        <Image
+                          src="/grey-arrow-up.svg"
+                          alt="logojinn.com"
+                          width={11}
+                          height={10}
+                        />
+                      </div>
+                      <div className={styles.startupInfo}>
+                        <p>60 paid users</p>
+                        <p>5k total</p>
+                      </div>
+                    </Link>
+                    <Link
+                      href="https://idied.org/"
+                      passHref
+                      target="_blank"
+                      className={styles.startup}
+                    >
+                      <div className={styles.startupTitle}>
+                        <h4>idied.org</h4>
+                        <Image
+                          src="/grey-arrow-up.svg"
+                          alt="idied.org"
+                          width={11}
+                          height={10}
+                        />
+                      </div>
+                      <div className={styles.startupInfo}>
+                        <p>2 paid users</p>
+                        <p>5k total</p>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </CenteredContainer>
           </SideSafeArea>
