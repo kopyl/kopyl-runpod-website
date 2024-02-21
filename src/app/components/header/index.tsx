@@ -11,7 +11,7 @@ export const Header = () => {
       <SideSafeArea className={styles.safeArea}>
         <CenteredContainer className={styles.headerContainer}>
           <Link href="/" className={styles.logotype}>
-            <Image src="/logo.svg" alt="logo" width={22} height={24} />
+            <Image src="/logo.svg" alt="logo" width={22} height={24} priority />
             <p className={styles.type}>Kopyl Oleh</p>
           </Link>
           <Nav styles={styles} />
@@ -20,7 +20,13 @@ export const Header = () => {
             Hire me
           </SecondaryButton>
           <button className={styles.burger}>
-            <Image src="/burger-icon.svg" alt="burger" width={24} height={24} />
+            <Image
+              src="/burger-icon.svg"
+              alt="burger"
+              width={24}
+              height={24}
+              priority
+            />
           </button>
         </CenteredContainer>
       </SideSafeArea>

@@ -24,6 +24,7 @@ export const StackTile = ({
           alt="backend"
           width={25}
           height={25}
+          priority
         />
         <p>{children}</p>
       </div>

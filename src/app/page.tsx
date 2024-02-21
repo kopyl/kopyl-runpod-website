@@ -175,6 +175,7 @@ export default function Home() {
                           alt="github"
                           width={25}
                           height={25}
+                          priority
                         />
                         <h3>I contribute to open source</h3>
                       </div>
@@ -203,6 +204,7 @@ export default function Home() {
                         alt="runpod"
                         width={25}
                         height={27}
+                        priority
                       />
                       <h3>I spent $2000+ on Runpod</h3>
                     </div>
@@ -225,6 +227,7 @@ export default function Home() {
                           alt="logojinn.com"
                           width={11}
                           height={10}
+                          priority
                         />
                       </div>
                       <div className={styles.startupInfo}>
@@ -245,6 +248,7 @@ export default function Home() {
                           alt="idied.org"
                           width={11}
                           height={10}
+                          priority
                         />
                       </div>
                       <div className={styles.startupInfo}>

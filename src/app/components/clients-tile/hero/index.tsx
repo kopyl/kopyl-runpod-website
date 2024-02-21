@@ -12,6 +12,7 @@ export const ClientsTile = ({ children, href }: any) => {
         width={9}
         height={9}
         className={styles.arrow}
+        priority
       />
     </Link>
   );

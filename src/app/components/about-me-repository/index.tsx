@@ -17,6 +17,7 @@ export const Repository = ({ children, href }: any) => {
         width={11}
         height={10}
         className={styles.greyArrow}
+        priority
       />
       <Image
         src="/white-arrow-up.svg"
@@ -24,6 +25,7 @@ export const Repository = ({ children, href }: any) => {
         width={11}
         height={10}
         className={styles.whiteArrow}
+        priority
       />
     </Link>
   );
