@@ -6,13 +6,26 @@ export const Footer = ({ children }: any) => {
   return (
     <div className={styles.footer}>
       <SideSafeArea>
-        <CenteredContainer>
-          <p className={styles.footerText}>
-            © 2021 Kopyl Oleh. All rights reserved.
-          </p>
-          <Link href="/privacy" className={styles.privacy}>
-            Privacy Policy
-          </Link>
+        <CenteredContainer className={styles.footerDesktopContainer}>
+          <span className={styles.info}>Designed & developed myself</span>
+          <div className={styles.links}>
+            <Link href="/contacts" className={styles.link}>
+              LinkedIn
+            </Link>
+            <Link href="/privacy" className={styles.link}>
+              WhatsApp
+            </Link>
+            <Link href="/terms" className={styles.link}>
+              Telegram
+            </Link>
+            <Link href="/terms" className={styles.link}>
+              Discord
+            </Link>
+            <Link href="/terms" className={styles.link}>
+              Email
+            </Link>
+          </div>
+          <span className={styles.info}>I’m not a RunPod employee</span>
         </CenteredContainer>
       </SideSafeArea>
     </div>
