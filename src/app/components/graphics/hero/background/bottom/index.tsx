@@ -10,7 +10,7 @@ export const HeroBackgroundBottom = ({ className }: any) => {
       xmlns="http://www.w3.org/2000/svg"
       className={`${styles.heroBackgroundBottom} ${className}`}
     >
-      <g clip-path="url(#clip0_81_564)">
+      <g clipPath="url(#clip0_81_564)">
         <path
           d="M485.5 -129.746V-129.747V-362.207L0.5 -130.548V190.207L405.931 -3.4256L406.147 -2.97443L405.931 -3.42566C429.76 -14.8012 449.882 -32.7049 463.964 -55.0619C478.047 -77.419 485.514 -103.314 485.5 -129.746Z"
           stroke="url(#paint0_linear_81_564)"
@@ -29,8 +29,8 @@ export const HeroBackgroundBottom = ({ className }: any) => {
           y2="191"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#824EDC" stop-opacity="0" />
-          <stop offset="1" stop-color="#824EDC" />
+          <stop stopColor="#824EDC" stopOpacity="0" />
+          <stop offset="1" stopColor="#824EDC" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_81_564"
@@ -40,8 +40,8 @@ export const HeroBackgroundBottom = ({ className }: any) => {
           y2="191"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#824EDC" stop-opacity="0" />
-          <stop offset="1" stop-color="#824EDC" />
+          <stop stopColor="#824EDC" stopOpacity="0" />
+          <stop offset="1" stopColor="#824EDC" />
         </linearGradient>
         <clipPath id="clip0_81_564">
           <rect width="1064" height="191" fill="white" />

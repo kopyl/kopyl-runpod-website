@@ -9,7 +9,7 @@ export const HeroBackgroundTop = ({ className }: any) => {
       xmlns="http://www.w3.org/2000/svg"
       className={`${styles.heroBackgroundTop} ${className}`}
     >
-      <g clip-path="url(#clip0_77_555)">
+      <g clipPath="url(#clip0_77_555)">
         <path
           opacity="0.9"
           d="M666.465 -61.4351L666.465 -61.4352L940.408 -171.082L940.223 -171.546L940.409 -171.082C954.004 -176.529 968.723 -178.555 983.279 -176.983C997.835 -175.41 1011.79 -170.287 1023.91 -162.062C1036.04 -153.836 1045.97 -142.758 1052.84 -129.796C1059.71 -116.833 1063.3 -102.382 1063.31 -87.7038V235.554C1063.33 253.549 1057.96 271.135 1047.89 286.034C1037.82 300.932 1023.53 312.458 1006.85 319.118L578.5 490.254V68.5218C578.53 40.5281 586.927 13.1857 602.606 -9.97832C618.285 -33.1424 640.528 -51.0652 666.465 -61.4351Z"
@@ -38,8 +38,8 @@ export const HeroBackgroundTop = ({ className }: any) => {
           y2="412.883"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#824EDC" stop-opacity="0" />
-          <stop offset="1" stop-color="#824EDC" />
+          <stop stopColor="#824EDC" stopOpacity="0" />
+          <stop offset="1" stopColor="#824EDC" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_77_555"
@@ -49,8 +49,8 @@ export const HeroBackgroundTop = ({ className }: any) => {
           y2="413.883"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#824EDC" stop-opacity="0" />
-          <stop offset="1" stop-color="#824EDC" />
+          <stop stopColor="#824EDC" stopOpacity="0" />
+          <stop offset="1" stopColor="#824EDC" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_77_555"
@@ -60,8 +60,8 @@ export const HeroBackgroundTop = ({ className }: any) => {
           y2="876"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#824EDC" stop-opacity="0" />
-          <stop offset="1" stop-color="#824EDC" />
+          <stop stopColor="#824EDC" stopOpacity="0" />
+          <stop offset="1" stopColor="#824EDC" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_77_555"
@@ -71,8 +71,8 @@ export const HeroBackgroundTop = ({ className }: any) => {
           y2="876"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#824EDC" stop-opacity="0" />
-          <stop offset="1" stop-color="#824EDC" />
+          <stop stopColor="#824EDC" stopOpacity="0" />
+          <stop offset="1" stopColor="#824EDC" />
         </linearGradient>
         <clipPath id="clip0_77_555">
           <rect width="1064" height="425" fill="white" />
