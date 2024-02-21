@@ -4,21 +4,25 @@
 
     span
         font-size: 12px
+        min-width: max-content
 
     padding: 182px 0 58px 0
-    @media (max-width: $size-brakepoint-mobile)
-        padding: 182px 20px 101px 20px
+    @media (max-width: 950px)
+        padding: 141px 20px 141px 20px
 
     .footerDesktopContainer
-        @media (max-width: $size-brakepoint-mobile)
+        @media (max-width: 950px)
             display: none
         
         display: flex
         justify-content: space-between
         align-items: center
+        gap: 50px
+        flex-wrap: wrap
 
         .links
             display: flex
+            min-width: max-content
 
             .link
                 padding: 15px
@@ -26,5 +30,35 @@
 
                 &:hover
                     color: rgba(255, 255, 255, 1)
+
+    .footerMobileContainer
+        @media (min-width: 950px)
+            display: none
+
+        display: flex
+        flex-direction: column
+        gap: 80px 
+
+        .links
+            display: flex
+            flex-direction: row
+            gap: 80px
+
+        .linksColumn
+            display: flex
+            flex-direction: column
+            gap: 28px
+            flex: 1
+
+        .infoColumn
+            display: flex
+            flex-direction: row
+            gap: 80px
+            flex: 1
+
+            .info
+                min-width: auto
+                flex: 1
+                line-height: 22px
 
             
