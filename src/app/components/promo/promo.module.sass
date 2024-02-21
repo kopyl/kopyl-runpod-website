@@ -1,0 +1,77 @@
+.promo
+    padding-top: 197px
+    @media (max-width: $size-brakepoint-mobile)
+        padding-top: 95px
+        padding-bottom: 101px
+
+.promoContainer
+    padding: 98px 60px 105px 60px
+    color: rgba(255, 255, 255, 1)
+    display: flex
+    flex-direction: column
+    align-items: center
+    border: 1px solid transparent
+    transition: 0.2s
+    position: relative
+
+    &::before
+        content: ''
+        position: absolute
+        left: -1px
+        right: -1px
+        top: -1px
+        bottom: -1px
+        background: $color-background-page
+        border-radius: 13px
+        z-index: -1
+        transition: 0.2s
+        opacity: 0
+        border: 1px solid transparent
+
+    &::after
+        content: ''
+        position: absolute
+        left: -1px
+        right: -1px
+        top: -1px
+        bottom: -1px
+        background: linear-gradient(180deg, #6A07CC 0%, #981FE3 100%)
+        border-radius: 13px
+        z-index: -1
+        transition: 0.2s
+        opacity: 1
+    
+    gap: 50px
+    border-radius: 13px
+    @media (max-width: 768px)
+        padding: 68px 30px
+        gap: 25px
+        border-radius: 10px
+    
+    .promoTitle
+        text-align: center
+
+    .primaryButton
+        transition: 0.2s
+        background: $color-background-page
+        text-align: center
+        border: 1px solid transparent
+        min-width: 234px
+    
+        padding: 13px 17px
+        font-size: 14px
+        color: rgba(255, 255, 255, 1)
+        
+        border-radius: 7px
+        @media (max-width: $size-brakepoint-mobile)
+            border-radius: 5px
+
+    @media (min-width: $size-brakepoint-mobile)
+        &:hover
+            &::after
+                opacity: 0
+            &::before
+                opacity: 1
+                border: 1px solid #15151E
+            .primaryButton
+                background: #6A07CC
