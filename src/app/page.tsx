@@ -119,7 +119,7 @@ export default function Home() {
         <div className={styles.models} id="models">
           <SideSafeArea>
             <CenteredContainer>
-              <h2 className={styles.modelsTitle}>Models I deploy and train</h2>
+              <h2 className={styles.modelsTitle}>Models I train and deploy</h2>
               <div className={styles.modelTiles}>
                 <ModelTile
                   className={styles.modelTile}
