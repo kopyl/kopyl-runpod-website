@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main className={styles.main} id="home">
       <div className={styles.hero}>
         <div className={styles.heroTop}>
           <SideSafeArea>
