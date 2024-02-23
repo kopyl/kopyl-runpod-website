@@ -18,7 +18,7 @@ export const Promo = ({ children }: any) => {
               Let’s create AI magic together ✨
             </h2>
             <PrimaryButton className={styles.promoButton}>
-              Book a call with me
+              Send me an email
             </PrimaryButton>
           </Link>
         </CenteredContainer>

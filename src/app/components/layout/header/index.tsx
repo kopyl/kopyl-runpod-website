@@ -17,7 +17,7 @@ export const Header = () => {
           <Nav styles={styles} />
           <p className={styles.heroGreeting}>Hi I’m a RunPod engineer 👋</p>
           <SecondaryButton className={styles.hireButton}>
-            Hire me
+            Email me
           </SecondaryButton>
           <button className={styles.burger}>
             <Image

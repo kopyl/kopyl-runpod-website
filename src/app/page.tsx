@@ -25,7 +25,7 @@ export default function Home() {
                 I train and deploy AI to RunPod
               </h1>
               <PrimaryButton className={styles.heroButton}>
-                Book a call with me
+                Send me an email
               </PrimaryButton>
             </CenteredContainer>
           </SideSafeArea>
