@@ -2,12 +2,12 @@ import Image from "next/image";
 import styles from "./page.module.sass";
 import { CenteredContainer, SideSafeArea } from "@components/util/util";
 import { PrimaryButton, SecondaryButton } from "@components/buttons";
-import { HeroBackgroundTop } from "@components/graphics/hero/background/top";
-import { HeroBackgroundBottom } from "@components/graphics/hero/background/bottom";
-import { ClientsTile } from "@components/clients-tile/hero";
-import { StackTile } from "@components/stack-tile";
-import { ModelTile } from "@components/model-tile";
-import { Repository } from "@components/about-me-repository";
+import { HeroBackgroundTop } from "@graphics/hero/background/top";
+import { HeroBackgroundBottom } from "@graphics/hero/background/bottom";
+import { ClientsTile } from "@/app/components/pages/home/clients-tile";
+import { StackTile } from "@/app/components/pages/home/stack-tile";
+import { ModelTile } from "@components/pages/home/model-tile";
+import { Repository } from "@components/pages/home/about-me-repository";
 import Link from "next/link";
 
 export default function Home() {

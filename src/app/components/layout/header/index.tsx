@@ -1,4 +1,4 @@
-import { Nav } from "../nav";
+import { Nav } from "../../nav";
 import styles from "./header.module.sass";
 import Link from "next/link";
 import Image from "next/image";
