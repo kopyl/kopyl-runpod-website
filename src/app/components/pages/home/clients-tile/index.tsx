@@ -7,7 +7,7 @@ export const ClientsTile = ({ children, href }: any) => {
     <Link href={href} passHref className={styles.tile} target="_blank">
       <p className={styles.title}>{children}</p>
       <Image
-        src="/purple-arrow-up-right.svg"
+        src="/icons/arrows/purple-arrow-up-right.svg"
         alt="arrow"
         width={9}
         height={9}

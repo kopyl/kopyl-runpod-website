@@ -21,7 +21,7 @@ export const Header = () => {
           </SecondaryButton>
           <button className={styles.burger}>
             <Image
-              src="/burger-icon.svg"
+              src="/icons/burger.svg"
               alt="burger"
               width={24}
               height={24}

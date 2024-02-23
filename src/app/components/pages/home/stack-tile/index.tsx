@@ -20,7 +20,7 @@ export const StackTile = ({
       />
       <div className={styles.stackTileHeading}>
         <Image
-          src={`stack-icons/${iconName}.svg`}
+          src={`icons/stack/${iconName}.svg`}
           alt="backend"
           width={25}
           height={25}

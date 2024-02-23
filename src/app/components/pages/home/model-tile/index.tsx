@@ -11,7 +11,7 @@ export const ModelTile = ({
     <div className={`${styles.tile} ${className}`}>
       <div className={styles.modelTileHeading}>
         <Image
-          src={`model-icons/${iconName}.svg`}
+          src={`/icons/model/${iconName}.svg`}
           alt="backend"
           width={25}
           height={25}

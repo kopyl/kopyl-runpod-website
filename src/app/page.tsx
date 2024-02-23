@@ -171,7 +171,7 @@ export default function Home() {
                       <div className={styles.aboutMeBlurCircle} />
                       <div className={styles.aboutMeOpenSourceTitle}>
                         <Image
-                          src="/about-me-icons/github.svg"
+                          src="/icons/about-me/github.svg"
                           alt="github"
                           width={25}
                           height={25}
@@ -200,7 +200,7 @@ export default function Home() {
                     <div className={styles.aboutMeBlurCircle} />
                     <div className={styles.aboutMeRunpodTitle}>
                       <Image
-                        src="/about-me-icons/runpod.svg"
+                        src="/icons/about-me/runpod.svg"
                         alt="runpod"
                         width={25}
                         height={27}
@@ -223,7 +223,7 @@ export default function Home() {
                       <div className={styles.startupTitle}>
                         <h4>idied.org</h4>
                         <Image
-                          src="/grey-arrow-up.svg"
+                          src="/icons/arrows/grey-arrow-up.svg"
                           alt="logojinn.com"
                           width={11}
                           height={10}
@@ -244,7 +244,7 @@ export default function Home() {
                       <div className={styles.startupTitle}>
                         <h4>idied.org</h4>
                         <Image
-                          src="/grey-arrow-up.svg"
+                          src="/icons/arrows/grey-arrow-up.svg"
                           alt="idied.org"
                           width={11}
                           height={10}
