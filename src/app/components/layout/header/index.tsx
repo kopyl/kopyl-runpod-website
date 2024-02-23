@@ -16,7 +16,10 @@ export const Header = () => {
           </Link>
           <Nav styles={styles} />
           <p className={styles.heroGreeting}>Hi I’m a RunPod engineer 👋</p>
-          <SecondaryButton className={styles.hireButton}>
+          <SecondaryButton
+            className={styles.hireButton}
+            href="mailto:kopyloleh@gmail.com"
+          >
             Email me
           </SecondaryButton>
           <button className={styles.burger}>

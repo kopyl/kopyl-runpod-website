@@ -13,7 +13,10 @@ export const Promo = ({ children }: any) => {
     <div className={styles.promo}>
       <SideSafeArea>
         <CenteredContainer>
-          <Link className={styles.promoContainer} href="/contact">
+          <Link
+            className={styles.promoContainer}
+            href="mailto:kopyloleh@gmail.com"
+          >
             <h2 className={styles.promoTitle}>
               Let’s create AI magic together ✨
             </h2>

@@ -24,7 +24,10 @@ export default function Home() {
               <h1 className={styles.heroTitle}>
                 I train and deploy AI to RunPod
               </h1>
-              <PrimaryButton className={styles.heroButton}>
+              <PrimaryButton
+                className={styles.heroButton}
+                href="mailto:kopyloleh@gmail.com"
+              >
                 Send me an email
               </PrimaryButton>
             </CenteredContainer>
@@ -37,7 +40,7 @@ export default function Home() {
                 <div className={styles.blurCircle} />
                 <div className={styles.heading}>
                   <h3>My clients</h3>
-                  <SecondaryButton>See more</SecondaryButton>
+                  <SecondaryButton href="/clients">See more</SecondaryButton>
                 </div>
                 <div className={styles.tiles}>
                   <ClientsTile href="https://www.runpod.io/">
