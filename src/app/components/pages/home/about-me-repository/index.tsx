@@ -12,7 +12,7 @@ export const Repository = ({ children, href }: any) => {
     >
       <p>{children}</p>
       <Image
-        src="/icons/arrows/grey-arrow-up.svg"
+        src="/icons/arrows/up-right/grey.svg"
         alt="star"
         width={11}
         height={10}
@@ -20,7 +20,7 @@ export const Repository = ({ children, href }: any) => {
         priority
       />
       <Image
-        src="/icons/arrows/white-arrow-up.svg"
+        src="/icons/arrows/up-right/white.svg"
         alt="star"
         width={11}
         height={10}

@@ -223,7 +223,7 @@ export default function Home() {
                       <div className={styles.startupTitle}>
                         <h4>idied.org</h4>
                         <Image
-                          src="/icons/arrows/grey-arrow-up.svg"
+                          src="/icons/arrows/up-right/grey.svg"
                           alt="logojinn.com"
                           width={11}
                           height={10}
@@ -244,7 +244,7 @@ export default function Home() {
                       <div className={styles.startupTitle}>
                         <h4>idied.org</h4>
                         <Image
-                          src="/icons/arrows/grey-arrow-up.svg"
+                          src="/icons/arrows/up-right/grey.svg"
                           alt="idied.org"
                           width={11}
                           height={10}
