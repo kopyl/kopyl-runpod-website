@@ -9,8 +9,8 @@ export const ClientsTile = ({ children, href }: any) => {
       <Image
         src="/icons/arrows/up-right/purple.svg"
         alt="arrow"
-        width={9}
-        height={9}
+        width={11}
+        height={10}
         className={styles.arrow}
         priority
       />
