@@ -1,6 +1,12 @@
 import styles from "./page.module.sass";
 import { CenteredContainer, SideSafeArea } from "@components/util/util";
 import { ClientsTile } from "@components/pages/clients/clients-tile";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kopyl Oleh – Clients",
+  description: "I train and deploy AI to RunPod",
+};
 
 export default function Test() {
   return (
