@@ -11,13 +11,13 @@ import { PrimaryButton } from "@components/buttons";
 export const Menu = ({ menuOpen, toggleMenu }: any) => {
   return (
     <div className={`${styles.menu} ${menuOpen ? styles.open : ""}`}>
-      <Link className={styles.header} href="/#home">
-        <div className={styles.logotype} onClick={toggleMenu}>
+      <div className={styles.header}>
+        <Link className={styles.logotype} onClick={toggleMenu} href="/#home">
           <Image src="/logo.svg" alt="logo" width={22} height={23} priority />
           <p className={styles.type}>Kopyl Oleh</p>
-        </div>
+        </Link>
         <CloseButton onClick={toggleMenu}>Close</CloseButton>
-      </Link>
+      </div>
       <SideSafeArea className={styles.mainContainer}>
         <Nav styles={styles} closeMenu={toggleMenu} />
         <div className={styles.footer}>
