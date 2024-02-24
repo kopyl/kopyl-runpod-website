@@ -22,7 +22,7 @@ export const Header = () => {
       <SideSafeArea className={styles.safeArea}>
         <CenteredContainer className={styles.headerContainer}>
           <Link href="/#home" className={styles.logotype}>
-            <Image src="/logo.svg" alt="logo" width={22} height={24} priority />
+            <Image src="/logo.svg" alt="logo" width={22} height={23} priority />
             <p className={styles.type}>Kopyl Oleh</p>
           </Link>
           <Nav styles={styles} />

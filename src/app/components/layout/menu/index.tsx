@@ -13,7 +13,7 @@ export const Menu = ({ menuOpen, toggleMenu }: any) => {
     <div className={`${styles.menu} ${menuOpen ? styles.open : ""}`}>
       <Link className={styles.header} href="/#home">
         <div className={styles.logotype} onClick={toggleMenu}>
-          <Image src="/logo.svg" alt="logo" width={22} height={24} priority />
+          <Image src="/logo.svg" alt="logo" width={22} height={23} priority />
           <p className={styles.type}>Kopyl Oleh</p>
         </div>
         <CloseButton onClick={toggleMenu}>Close</CloseButton>
