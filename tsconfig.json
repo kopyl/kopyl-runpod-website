@@ -31,6 +31,9 @@
             "@graphics/*": [
                 "./src/app/graphics/*"
             ],
+            "@analytics": [
+                "./src/app/scripts/analytics"
+            ],
         }
     },
     "include": [

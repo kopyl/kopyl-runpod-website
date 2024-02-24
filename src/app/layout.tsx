@@ -5,6 +5,7 @@ import "./globals.sass";
 import { Header } from "@/app/components/layout/header";
 import { Promo } from "./components/layout/promo";
 import { Footer } from "./components/layout/footer";
+import { Analytics } from "@analytics";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className} style={{ position: "relative" }}>
+        <Analytics />
         <Header />
         {children}
         <Promo />
