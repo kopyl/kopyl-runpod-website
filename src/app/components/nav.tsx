@@ -3,10 +3,11 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const MenuLink = ({ href, styles, children }: any) => {
+const MenuLink = ({ href, styles, children, closeMenu }: any) => {
   const pathname = usePathname();
   return (
     <Link
+      onClick={closeMenu}
       href={href}
       passHref
       className={`${styles.navLink} ${
@@ -18,19 +19,19 @@ const MenuLink = ({ href, styles, children }: any) => {
   );
 };
 
-export const Nav = ({ styles }: any) => {
+export const Nav = ({ styles, closeMenu = () => {} }: any) => {
   const pathname = usePathname();
 
   return (
     <nav className={styles.nav}>
       <div className={styles.navList}>
-        <MenuLink href="/#models" styles={styles}>
+        <MenuLink href="/#models" styles={styles} closeMenu={closeMenu}>
           What models do I work with
         </MenuLink>
-        <MenuLink href="/clients" styles={styles}>
+        <MenuLink href="/clients" styles={styles} closeMenu={closeMenu}>
           Trusted by
         </MenuLink>
-        <MenuLink href="/#stack" styles={styles}>
+        <MenuLink href="/#stack" styles={styles} closeMenu={closeMenu}>
           My stack
         </MenuLink>
       </div>
