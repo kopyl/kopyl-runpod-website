@@ -224,7 +224,7 @@ export default function Home() {
                       className={styles.startup}
                     >
                       <div className={styles.startupTitle}>
-                        <h4>idied.org</h4>
+                        <h4>logojinn.com</h4>
                         <Image
                           src="/icons/arrows/up-right/grey.svg"
                           alt="logojinn.com"
@@ -234,8 +234,8 @@ export default function Home() {
                         />
                       </div>
                       <div className={styles.startupInfo}>
-                        <p>60 paid users</p>
-                        <p>5k total</p>
+                        <p>61 paid users</p>
+                        <p>16.5k total</p>
                       </div>
                     </Link>
                     <Link
@@ -256,7 +256,7 @@ export default function Home() {
                       </div>
                       <div className={styles.startupInfo}>
                         <p>2 paid users</p>
-                        <p>5k total</p>
+                        <p>487 total</p>
                       </div>
                     </Link>
                   </div>
