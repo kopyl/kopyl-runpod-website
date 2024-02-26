@@ -26,12 +26,13 @@ export const PrimaryButton = ({ children, href, className }: any) => {
 
 export const CloseButton = ({ children, href, className, onClick }: any) => {
   return (
-    <div
+    <Link
       className={`${styles.closeButton} ${styles.button} ${className}`}
       onClick={onClick}
+      href="?"
     >
       <Image src="/icons/close.svg" alt="close" width={11} height={11} />
       <p>{children}</p>
-    </div>
+    </Link>
   );
 };

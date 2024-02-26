@@ -9,7 +9,7 @@ import { Nav } from "@components/nav";
 import { PrimaryButton } from "@components/buttons";
 import { useEffect } from "react";
 
-export const Menu = ({ menuOpen, toggleMenu }: any) => {
+export const Menu = ({ menuOpen }: any) => {
   useEffect(() => {
     if (menuOpen) {
       document.body.style.overflow = "hidden";
@@ -22,14 +22,14 @@ export const Menu = ({ menuOpen, toggleMenu }: any) => {
   return (
     <div className={`${styles.menu} ${menuOpen ? styles.open : ""}`}>
       <div className={styles.header}>
-        <Link className={styles.logotype} onClick={toggleMenu} href="/#home">
+        <Link className={styles.logotype} href="/#home">
           <Image src="/logo.svg" alt="logo" width={20} height={23} priority />
           <p className={styles.type}>Kopyl Oleh</p>
         </Link>
-        <CloseButton onClick={toggleMenu}>Close</CloseButton>
+        <CloseButton>Close</CloseButton>
       </div>
       <SideSafeArea className={styles.mainContainer}>
-        <Nav styles={styles} closeMenu={toggleMenu} />
+        <Nav styles={styles} />
         <div className={styles.footer}>
           <PrimaryButton
             className={styles.heroButton}

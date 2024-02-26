@@ -8,11 +8,13 @@ import { ClientsTile } from "@/app/components/pages/home/clients-tile";
 import { StackTile } from "@/app/components/pages/home/stack-tile";
 import { ModelTile } from "@components/pages/home/model-tile";
 import { Repository } from "@components/pages/home/about-me-repository";
+import { Header } from "@/app/components/layout/header";
 import Link from "next/link";
 
-export default function Home() {
+export default function Home({ params, searchParams }: any) {
   return (
     <main className={styles.main} id="home">
+      <Header searchParams={searchParams} />
       <div className={styles.hero}>
         <div className={styles.heroTop}>
           <SideSafeArea>

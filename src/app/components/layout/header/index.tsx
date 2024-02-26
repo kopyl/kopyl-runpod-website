@@ -1,5 +1,3 @@
-"use client";
-
 import { Nav } from "../../nav";
 import styles from "./header.module.sass";
 import Link from "next/link";
@@ -7,18 +5,11 @@ import Image from "next/image";
 import { SecondaryButton } from "@/app/components/buttons";
 import { CenteredContainer, SideSafeArea } from "@components/util/util";
 import { Menu } from "@components/layout/menu";
-import { useState } from "react";
 
-export const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
+export const Header = ({ searchParams }: any) => {
   return (
     <div className={styles.header}>
-      <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} />
+      <Menu menuOpen={searchParams.isMenuOpen === "true"} />
       <SideSafeArea className={styles.safeArea}>
         <CenteredContainer className={styles.headerContainer}>
           <Link href="/#home" className={styles.logotype}>
@@ -33,7 +24,7 @@ export const Header = () => {
           >
             Email me
           </SecondaryButton>
-          <button className={styles.burger} onClick={toggleMenu}>
+          <Link className={styles.burger} href="?isMenuOpen=true">
             <Image
               src="/icons/burger.svg"
               alt="burger"
@@ -41,7 +32,7 @@ export const Header = () => {
               height={24}
               priority
             />
-          </button>
+          </Link>
         </CenteredContainer>
       </SideSafeArea>
     </div>
