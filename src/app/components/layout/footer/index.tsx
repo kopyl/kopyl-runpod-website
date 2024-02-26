@@ -2,7 +2,7 @@ import styles from "./footer.module.sass";
 import { CenteredContainer, SideSafeArea } from "@components/util/util";
 import Link from "next/link";
 
-export const Footer = ({ children }: any) => {
+export const Footer = () => {
   return (
     <div className={styles.footer}>
       <SideSafeArea>
