@@ -7,8 +7,18 @@ import { CloseButton } from "@components/buttons";
 import Link from "next/link";
 import { Nav } from "@components/nav";
 import { PrimaryButton } from "@components/buttons";
+import { useEffect } from "react";
 
 export const Menu = ({ menuOpen, toggleMenu }: any) => {
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = "hidden";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [menuOpen]);
+
   return (
     <div className={`${styles.menu} ${menuOpen ? styles.open : ""}`}>
       <div className={styles.header}>
