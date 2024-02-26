@@ -4,13 +4,16 @@ import Link from "next/link";
 
 const links = [
   [
-    { title: "LinkedIn", href: "/contacts" },
-    { title: "WhatsApp", href: "/privacy" },
-    { title: "Telegram", href: "/terms" },
+    { title: "LinkedIn", href: "https://www.linkedin.com/in/okopyl/" },
+    { title: "WhatsApp", href: "https://wa.me/+380507308141/" },
+    { title: "Telegram", href: "https://t.me/kopyl/" },
   ],
   [
-    { title: "Discord", href: "/terms" },
-    { title: "Email", href: "/terms" },
+    {
+      title: "Discord",
+      href: "https://discordapp.com/users/346770476992954369",
+    },
+    { title: "Email", href: "mailto:kopyloleh@gmail.com" },
   ],
 ];
 
