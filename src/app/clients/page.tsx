@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "I train and deploy AI to RunPod",
 };
 
-export default function Test({ params, searchParams }: any) {
+export default function Clients({ params, searchParams }: any) {
   return (
     <main className={styles.main} id="home">
       <Header searchParams={searchParams} />
