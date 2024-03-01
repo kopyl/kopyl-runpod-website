@@ -192,7 +192,7 @@ export default function Home({ params, searchParams }: any) {
                           onediff
                         </Repository>
                         <Repository href="https://github.com/PixArt-alpha/PixArt-alpha">
-                          PixArt-alpha
+                          PixArt
                         </Repository>
                       </div>
                     </div>
