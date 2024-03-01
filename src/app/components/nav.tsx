@@ -34,6 +34,9 @@ export const Nav = ({ styles, closeMenu = () => {} }: any) => {
         <MenuLink href="/#stack" styles={styles} closeMenu={closeMenu}>
           My stack
         </MenuLink>
+        <MenuLink href="/#aboutMe" styles={styles} closeMenu={closeMenu}>
+          About me
+        </MenuLink>
       </div>
     </nav>
   );
