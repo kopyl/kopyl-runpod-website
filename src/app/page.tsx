@@ -188,6 +188,9 @@ export default function Home({ params, searchParams }: any) {
                         <Repository href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">
                           AUTOMATIC1111
                         </Repository>
+                        <Repository href="https://github.com/huggingface/diffusers/pull/6745">
+                          Diffusers
+                        </Repository>
                         <Repository href="https://github.com/siliconflow/onediff">
                           onediff
                         </Repository>
