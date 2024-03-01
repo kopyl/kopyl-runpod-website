@@ -185,16 +185,16 @@ export default function Home({ params, searchParams }: any) {
                         <h3>I contribute to open source</h3>
                       </div>
                       <div className={styles.aboutMeRepositories}>
-                        <Repository href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">
+                        <Repository href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/pulls?q=is%3Apr+author%3Akopyl">
                           AUTOMATIC1111
                         </Repository>
-                        <Repository href="https://github.com/huggingface/diffusers/pull/6745">
+                        <Repository href="https://github.com/huggingface/diffusers/pulls?q=is%3Apr+author%3Akopyl+">
                           Diffusers
                         </Repository>
-                        <Repository href="https://github.com/siliconflow/onediff">
+                        <Repository href="https://github.com/siliconflow/onediff/pulls?q=is%3Apr+author%3Akopyl+">
                           onediff
                         </Repository>
-                        <Repository href="https://github.com/PixArt-alpha/PixArt-alpha">
+                        <Repository href="https://github.com/PixArt-alpha/PixArt-alpha/pulls?q=is%3Apr+author%3Akopyl+">
                           PixArt
                         </Repository>
                       </div>
