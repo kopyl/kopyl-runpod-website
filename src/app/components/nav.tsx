@@ -25,17 +25,17 @@ export const Nav = ({ styles, closeMenu = () => {} }: any) => {
   return (
     <nav className={styles.nav}>
       <div className={styles.navList}>
-        <MenuLink href="/#models" styles={styles} closeMenu={closeMenu}>
-          What models do I work with
-        </MenuLink>
-        <MenuLink href="/clients" styles={styles} closeMenu={closeMenu}>
-          Trusted by
-        </MenuLink>
         <MenuLink href="/#stack" styles={styles} closeMenu={closeMenu}>
           My stack
         </MenuLink>
+        <MenuLink href="/#models" styles={styles} closeMenu={closeMenu}>
+          What models do I work with
+        </MenuLink>
         <MenuLink href="/#aboutMe" styles={styles} closeMenu={closeMenu}>
           About me
+        </MenuLink>
+        <MenuLink href="/clients" styles={styles} closeMenu={closeMenu}>
+          Trusted by
         </MenuLink>
       </div>
     </nav>
