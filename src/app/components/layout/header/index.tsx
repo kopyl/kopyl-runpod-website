@@ -24,7 +24,11 @@ export const Header = ({ searchParams }: any) => {
           >
             Email me
           </SecondaryButton>
-          <Link className={styles.burger} href="?isMenuOpen=true">
+          <Link
+            className={styles.burger}
+            href="?isMenuOpen=true"
+            scroll={false}
+          >
             <Image
               src="/icons/burger.svg"
               alt="burger"
