@@ -31,7 +31,7 @@ export default function Clients({ params, searchParams }: any) {
                 Deployed serverless model for generating images
               </ClientsTile>
               <ClientsTile href="https://logojinn.com/" title="LogoJinn">
-                Deployed serverless model for generating images
+                Deployed serverless model for generating logotype images
               </ClientsTile>
               <ClientsTile
                 href="https://www.generativelabs.co/"
@@ -41,10 +41,13 @@ export default function Clients({ params, searchParams }: any) {
                 text classifier model from scratch
               </ClientsTile>
               <ClientsTile href="https://crossdot.co/" title="Crossdot">
-                Deployed serverless model for generating images
+                Trained and deployed an Oject Detection model for detecting
+                child porn to save companies from legal issues caused by their
+                users
               </ClientsTile>
               <ClientsTile href="https://norae.ai/" title="norae.ai">
-                Deployed serverless model for generating images
+                Deployed serverless model for changing voices in rap songs
+                provided by users
               </ClientsTile>
             </div>
           </CenteredContainer>
