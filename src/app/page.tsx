@@ -20,11 +20,9 @@ export default function Home({ params, searchParams }: any) {
           <SideSafeArea>
             <CenteredContainer className={styles.heroTopContent}>
               <HeroBackgroundTop className={styles.heroBackgroundImageTop} />
-              <h4 className={styles.heroGreeting}>
-                Hi I’m a RunPod engineer 👋
-              </h4>
+              <h4 className={styles.heroGreeting}>Hi I’m a AI engineer 👋</h4>
               <h1 className={styles.heroTitle}>
-                I train and deploy AI to RunPod
+                I train and integrate AI models and tools
               </h1>
               <PrimaryButton
                 className={styles.heroButton}
