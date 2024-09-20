@@ -37,8 +37,8 @@ export default function Clients({ params, searchParams }: any) {
                 href="https://www.generativelabs.co/"
                 title="Generative labs"
               >
-                Fine-tuned LLM model for text classification and trained a text
-                classifier model from scratch
+                Fine-tuned an LLM model for text classification and trained a
+                text classifier model from scratch
               </ClientsTile>
               <ClientsTile href="https://crossdot.co/" title="Crossdot">
                 Deployed serverless model for generating images
