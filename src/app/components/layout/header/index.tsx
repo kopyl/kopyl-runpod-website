@@ -17,7 +17,7 @@ export const Header = ({ searchParams }: any) => {
             <p className={styles.type}>Kopyl Oleh</p>
           </Link>
           <Nav styles={styles} />
-          <p className={styles.heroGreeting}>Hi I’m a RunPod engineer 👋</p>
+          <p className={styles.heroGreeting}>Hi I’m a AI engineer 👋</p>
           <SecondaryButton
             className={styles.hireButton}
             href="mailto:kopyloleh@gmail.com"

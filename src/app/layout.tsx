@@ -9,8 +9,8 @@ import { Analytics } from "@analytics";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kopyl Oleh – RunPod dev",
-  description: "I train and deploy AI to RunPod",
+  title: "Kopyl Oleh – AI engineer",
+  description: "I train and integrate AI models and tools",
 };
 
 export default function RootLayout({

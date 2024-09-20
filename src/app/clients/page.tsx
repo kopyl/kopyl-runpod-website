@@ -6,7 +6,7 @@ import { Header } from "@/app/components/layout/header";
 
 export const metadata: Metadata = {
   title: "Kopyl Oleh – Clients",
-  description: "I train and deploy AI to RunPod",
+  description: "I train and integrate AI models and tools",
 };
 
 export default function Clients({ params, searchParams }: any) {
