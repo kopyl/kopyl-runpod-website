@@ -33,9 +33,9 @@ export const Menu = ({ menuOpen }: any) => {
         <div className={styles.footer}>
           <PrimaryButton
             className={styles.heroButton}
-            href="mailto:kopyloleh@gmail.com"
+            href="https://docs.google.com/document/d/1RuSI_f3PZuqhJNZhgkKXx0V-BCQ-V2p2Hy4s4A1pwKQ"
           >
-            Send me an email
+            My CV
           </PrimaryButton>
         </div>
       </SideSafeArea>
