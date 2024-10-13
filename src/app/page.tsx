@@ -220,7 +220,17 @@ export default function Home({ params, searchParams }: any) {
                           height={27}
                           priority
                         />
-                        <h3>I spent $2000+ on Runpod</h3>
+                        <h3>
+                          I spent $2000+ on{` `}
+                          <Link
+                            href="https://www.runpod.io/"
+                            passHref
+                            target="_blank"
+                            className={styles.runpodLink}
+                          >
+                            Runpod
+                          </Link>
+                        </h3>
                       </div>
                     </div>
                   </div>
