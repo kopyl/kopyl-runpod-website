@@ -202,19 +202,28 @@ export default function Home({ params, searchParams }: any) {
                       <h3>I’m from Ukraine 🇺🇦</h3>
                     </div>
                   </div>
-                  <div className={styles.aboutMeRunpod}>
-                    <div className={styles.aboutMeBlurCircle} />
-                    <div className={styles.aboutMeRunpodTitle}>
-                      <Image
-                        src="/icons/about-me/runpod.svg"
-                        alt="runpod"
-                        width={25}
-                        height={27}
-                        priority
-                      />
-                      <h3>I spent $2000+ on Runpod</h3>
+                  <div className={styles.aboutMeRunpodWithCvAndGithubAndTitle}>
+                    <div className={styles.gitHubAndCv}>
+                      <ClientsTile href="https://github.com/kopyl/">
+                        GitHub
+                      </ClientsTile>
+                      <ClientsTile href="https://docs.google.com/document/d/1RuSI_f3PZuqhJNZhgkKXx0V-BCQ-V2p2Hy4s4A1pwKQ">
+                        My CV
+                      </ClientsTile>
                     </div>
-                    <span>of my own money</span>
+                    <div className={styles.aboutMeRunpod}>
+                      <div className={styles.aboutMeBlurCircle} />
+                      <div className={styles.aboutMeRunpodTitle}>
+                        <Image
+                          src="/icons/about-me/runpod.svg"
+                          alt="runpod"
+                          width={25}
+                          height={27}
+                          priority
+                        />
+                        <h3>I spent $2000+ on Runpod</h3>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className={styles.aboutMeInfoBottomTileRow}>

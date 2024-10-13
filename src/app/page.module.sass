@@ -273,50 +273,56 @@
                         opacity: 0.2
                         pointer-events: none
 
-                .aboutMeRunpod
-                    display: flex
-                    justify-content: space-between
-                    align-items: center
-                    border: 1px solid #15151E
+                .aboutMeRunpodWithCvAndGithubAndTitle
                     display: flex
                     flex-direction: column
                     
-                    width: 346px
-                    padding: 62px 42px 45px 42px
-                    border-radius: 13px
+                    gap: 12px
                     @media (max-width: $size-brakepoint-mobile)
-                        width: auto
-                        padding: 62px 0
-                        border-radius: 10px
+                        gap: 10px
 
-                    position: relative
-                    overflow: hidden
-                    .aboutMeBlurCircle
-                        position: absolute
-                        top: 0
-                        left: 0
-                        bottom: 0
-                        right: 0
-                        background: radial-gradient(142.39% 142.39% at 50% 118.53%, #824FDC 0%, rgba(0, 0, 10, 0) 100%)
-                        opacity: 0.2
-                        pointer-events: none
-                    
-                    .aboutMeRunpodTitle
+                    .gitHubAndCv
                         display: flex
-                        align-items: center
-                        gap: 22px
+                        
+                        gap: 12px
+                        @media (max-width: $size-brakepoint-mobile)
+                            gap: 10px
+                            flex-direction: column
 
+                    .aboutMeRunpod
+                        display: flex
+                        border: 1px solid #15151E
                         flex-direction: column
+                        flex: 1
+                        
+                        width: 346px
+                        padding: 62px 42px 45px 42px
+                        border-radius: 13px
                         @media (max-width: $size-brakepoint-mobile)
-                            flex: 1
+                            width: auto
+                            padding: 62px 0
+                            border-radius: 10px
 
-                    span
-                        font-size: 14px
                         position: relative
-                        top: -4px
+                        overflow: hidden
+                        .aboutMeBlurCircle
+                            position: absolute
+                            top: 0
+                            left: 0
+                            bottom: 0
+                            right: 0
+                            background: radial-gradient(142.39% 142.39% at 50% 118.53%, #824FDC 0%, rgba(0, 0, 10, 0) 100%)
+                            opacity: 0.2
+                            pointer-events: none
+                        
+                        .aboutMeRunpodTitle
+                            display: flex
+                            align-items: center
+                            gap: 22px
 
-                        @media (max-width: $size-brakepoint-mobile)
-                            display: none
+                            flex-direction: column
+                            @media (max-width: $size-brakepoint-mobile)
+                                flex: 1
 
 
         .aboutMeInfoBottomTileRow
