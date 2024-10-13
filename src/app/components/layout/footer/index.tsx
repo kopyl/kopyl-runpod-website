@@ -13,7 +13,10 @@ const links = [
       title: "Discord",
       href: "https://discordapp.com/users/346770476992954369",
     },
-    { title: "Email", href: "mailto:kopyloleh@gmail.com" },
+    {
+      title: "Email",
+      href: "mailto:kopyloleh@gmail.com",
+    },
   ],
 ];
 
