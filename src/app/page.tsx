@@ -200,7 +200,7 @@ export default function Home({ params, searchParams }: any) {
                     </div>
                     <div className={styles.aboutMeFromUkraine}>
                       <div className={styles.aboutMeBlurCircle} />
-                      <h3>I’m from Ukraine 🇺🇦</h3>
+                      <h3>I’m from Kyiv, Ukraine 🇺🇦</h3>
                     </div>
                   </div>
                   <div className={styles.aboutMeRunpodWithGithub}>
