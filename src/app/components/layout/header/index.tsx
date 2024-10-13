@@ -20,9 +20,9 @@ export const Header = ({ searchParams }: any) => {
           <p className={styles.heroGreeting}>Hi I’m a AI engineer 👋</p>
           <SecondaryButton
             className={styles.hireButton}
-            href="mailto:kopyloleh@gmail.com"
+            href="https://docs.google.com/document/d/1RuSI_f3PZuqhJNZhgkKXx0V-BCQ-V2p2Hy4s4A1pwKQ"
           >
-            Email me
+            My CV
           </SecondaryButton>
           <Link
             className={styles.burger}

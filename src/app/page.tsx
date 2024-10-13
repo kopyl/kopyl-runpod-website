@@ -5,6 +5,7 @@ import { PrimaryButton, SecondaryButton } from "@components/buttons";
 import { HeroBackgroundTop } from "@graphics/hero/background/top";
 import { HeroBackgroundBottom } from "@graphics/hero/background/bottom";
 import { ClientsTile } from "@/app/components/pages/home/clients-tile";
+import { AboutMeGithub } from "@/app/components/pages/home/about-me-github";
 import { StackTile } from "@/app/components/pages/home/stack-tile";
 import { ModelTile } from "@components/pages/home/model-tile";
 import { Repository } from "@components/pages/home/about-me-repository";
@@ -202,15 +203,13 @@ export default function Home({ params, searchParams }: any) {
                       <h3>I’m from Ukraine 🇺🇦</h3>
                     </div>
                   </div>
-                  <div className={styles.aboutMeRunpodWithCvAndGithubAndTitle}>
-                    <div className={styles.gitHubAndCv}>
-                      <ClientsTile href="https://github.com/kopyl/">
-                        GitHub
-                      </ClientsTile>
-                      <ClientsTile href="https://docs.google.com/document/d/1RuSI_f3PZuqhJNZhgkKXx0V-BCQ-V2p2Hy4s4A1pwKQ">
-                        My CV
-                      </ClientsTile>
-                    </div>
+                  <div className={styles.aboutMeRunpodWithGithub}>
+                    <AboutMeGithub
+                      href="https://github.com/kopyl/"
+                      className={styles.github}
+                    >
+                      GitHub
+                    </AboutMeGithub>
                     <div className={styles.aboutMeRunpod}>
                       <div className={styles.aboutMeBlurCircle} />
                       <div className={styles.aboutMeRunpodTitle}>

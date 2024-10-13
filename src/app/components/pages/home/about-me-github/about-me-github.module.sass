@@ -1,0 +1,37 @@
+.tile
+    flex: 1
+    display: flex
+    justify-content: space-between
+    padding: 22px 22px 26px 26px
+    background-color: $color-background-page
+    border: 1px solid #15151E
+    border-radius: 7px
+    transition: 0.15s
+
+    @media (min-width: $size-brakepoint-mobile)
+        &:hover
+            border: 1px solid #824EDC
+
+        &:hover .title
+            color: rgba(255, 255, 255, 1)
+
+    height: 142px
+    @media (max-width: $size-brakepoint-mobile)
+        height: auto
+        min-width: max-content
+        gap: 20px
+        padding: 26px 20px
+        font-size: 14px
+        border-radius: 5px
+
+    .title
+        transition: 0.15s
+        
+        align-self: flex-end
+        @media (max-width: $size-brakepoint-mobile)
+            align-self: center
+
+    .arrow
+        align-self: flex-start
+        @media (max-width: $size-brakepoint-mobile)
+            align-self: center
