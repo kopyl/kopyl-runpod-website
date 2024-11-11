@@ -20,7 +20,6 @@ export default function Home({ params, searchParams }: any) {
         <div className={styles.heroTop}>
           <SideSafeArea>
             <CenteredContainer className={styles.heroTopContent}>
-              <HeroBackgroundTop className={styles.heroBackgroundImageTop} />
               <h4 className={styles.heroGreeting}>Hi I’m a AI engineer 👋</h4>
               <h1 className={styles.heroTitle}>
                 I train and integrate AI models <span>and tools</span>
@@ -61,9 +60,6 @@ export default function Home({ params, searchParams }: any) {
                   </ClientsTile>
                 </div>
               </div>
-              <HeroBackgroundBottom
-                className={styles.heroBackgroundImageBottom}
-              />
             </CenteredContainer>
           </SideSafeArea>
         </div>
