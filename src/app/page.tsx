@@ -20,16 +20,25 @@ export default function Home({ params, searchParams }: any) {
         <div className={styles.heroTop}>
           <SideSafeArea>
             <CenteredContainer className={styles.heroTopContent}>
-              <h4 className={styles.heroGreeting}>Hi I’m a AI engineer 👋</h4>
-              <h1 className={styles.heroTitle}>
-                I train and integrate AI models <span>and tools</span>
-              </h1>
-              <PrimaryButton
-                className={styles.heroButton}
-                href="mailto:kopyloleh@gmail.com"
-              >
-                Send me an email
-              </PrimaryButton>
+              <Image
+                src="/me.png"
+                alt="github"
+                width={341}
+                height={341}
+                priority
+                className={styles.heroImage}
+              />
+              <div className={styles.heroRightSide}>
+                <h1 className={styles.heroTitle}>
+                  I train and integrate AI models <span>and tools</span>
+                </h1>
+                <PrimaryButton
+                  className={styles.heroButton}
+                  href="mailto:kopyloleh@gmail.com"
+                >
+                  Send me an email
+                </PrimaryButton>
+              </div>
             </CenteredContainer>
           </SideSafeArea>
         </div>

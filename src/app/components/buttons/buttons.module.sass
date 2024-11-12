@@ -19,6 +19,19 @@
             border: 1px solid transparent
 
 
+.secondaryButtonGrey
+    transition: 0.15s
+    border: 1px solid #15151E
+    color: rgba(255, 255, 255, 0.8)
+    
+    &:hover
+        @media (min-width: $size-brakepoint-mobile)
+            cursor: pointer
+            background: #15151E
+            border: 1px solid transparent
+            color: rgba(255, 255, 255, 1)
+
+
 .primaryButton
     transition: 0.15s
     background: #6A07CC
@@ -29,7 +42,7 @@
         @media (min-width: $size-brakepoint-mobile)
             cursor: pointer
             border: 1px solid #824EDC
-            background: $color-background-page
+            background: transparent
 
 
 .closeButton

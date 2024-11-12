@@ -13,6 +13,18 @@ export const SecondaryButton = ({ children, href, className }: any) => {
   );
 };
 
+export const SecondaryButtonGrey = ({ children, href, className }: any) => {
+  return (
+    <Link
+      href={href}
+      className={`${styles.secondaryButtonGrey} ${styles.button} ${className}`}
+      target="_blank"
+    >
+      {children}
+    </Link>
+  );
+};
+
 export const PrimaryButton = ({ children, href, className }: any) => {
   return (
     <Link

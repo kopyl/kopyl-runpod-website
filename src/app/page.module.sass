@@ -3,14 +3,42 @@
 
     .hero
         opacity: 1
+        display: flex
+        flex-direction: column
+
+        gap: 33px
+        padding-top: 33px
+        @media (max-width: $size-brakepoint-mobile)
+            gap: 85px
+            padding-top: 0px
 
         .heroTopContent
             display: flex
-            flex-direction: column
+            margin-bottom: 50px
+            border-radius: 13px
             
-            padding: 102px 0 133px
+            padding: 10px 92px 10px 10px
+            gap: 92px
+            align-items: center
+            background: radial-gradient(72.33% 128.57% at 49.93% 100%, rgba(81, 27, 134, 0.4) 0%, rgba(0, 0, 10, 0.4) 100%)
+            border: 1px solid #15151E
             @media (max-width: $size-brakepoint-mobile)
-                padding: 39px 0 53px
+                padding: 30px 30px 0 30px
+                gap: 39px
+                align-items: stretch
+                background: transparent
+                border: none
+                flex-direction: column
+
+            .heroLeftSide
+                border-radius: 8px
+
+            .heroImage
+                flex-shrink: 0
+                border-radius: 8px
+                height: auto
+                @media (max-width: $size-brakepoint-mobile)
+                    width: 100%
 
         .heroBackgroundImageTop
             width: 100%
@@ -34,39 +62,26 @@
                 transform: translateY(-30px)
                 animation: fade-in 1s 1s ease-out forwards
 
-        .heroGreeting
-            margin-bottom: 33px
-            text-align: center
+        .heroTitle
             color: rgba(255, 255, 255, 1)
             animation: fade-in-up .5s .2s ease-out forwards
             opacity: 0
 
-            @media (max-width: $size-brakepoint-mobile)
-                display: none
-
-        .heroTitle
             margin-bottom: 45px
-            text-align: center
-            color: rgba(255, 255, 255, 1)
-            animation: fade-in-up .5s .4s ease-out forwards
-            opacity: 0
-
             @media (max-width: $size-brakepoint-mobile)
+                margin-bottom: 39px
                 padding: 0 10px
 
                 span
                     display: none
 
         .heroButton
-            margin: 0 auto
-            max-width: 392px
+            min-width: max-content
             opacity: 0
-
-            width: 100%
-            animation: fade-in-up .5s 1.5s ease-out forwards
+            animation: fade-in-up .5s .45s ease-out forwards
             @media (max-width: $size-brakepoint-mobile)
-                width: auto
-                animation: fade-in-up .5s .6s ease-out forwards
+                width: 100%
+                animation: fade-in-up .5s .4s ease-out forwards
 
         .clients
             background: $color-background-page
