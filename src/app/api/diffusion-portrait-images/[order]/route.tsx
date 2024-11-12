@@ -1,9 +1,9 @@
 import fs from "fs";
 import path from "path";
-import { NextApiRequest } from "next";
+import { NextRequest } from "next/server";
 
 export async function GET(
-  req: NextApiRequest,
+  req: NextRequest,
   { params }: { params: { order: string } }
 ) {
   const order = ["0", "3", "6", "9", "12", "15"].includes(params.order)
