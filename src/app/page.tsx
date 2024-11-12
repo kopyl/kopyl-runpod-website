@@ -2,14 +2,13 @@ import Image from "next/image";
 import styles from "./page.module.sass";
 import { CenteredContainer, SideSafeArea } from "@components/util/util";
 import { PrimaryButton, SecondaryButton } from "@components/buttons";
-import { HeroBackgroundTop } from "@graphics/hero/background/top";
-import { HeroBackgroundBottom } from "@graphics/hero/background/bottom";
 import { ClientsTile } from "@/app/components/pages/home/clients-tile";
 import { AboutMeGithub } from "@/app/components/pages/home/about-me-github";
 import { StackTile } from "@/app/components/pages/home/stack-tile";
 import { ModelTile } from "@components/pages/home/model-tile";
 import { Repository } from "@components/pages/home/about-me-repository";
 import { Header } from "@/app/components/layout/header";
+import { DiffusionPortraitDynamicImage } from "@components/layout/diffusion-portrait";
 import Link from "next/link";
 
 export default function Home({ params, searchParams }: any) {
@@ -20,14 +19,7 @@ export default function Home({ params, searchParams }: any) {
         <div className={styles.heroTop}>
           <SideSafeArea>
             <CenteredContainer className={styles.heroTopContent}>
-              <Image
-                src="/me.png"
-                alt="github"
-                width={341}
-                height={341}
-                priority
-                className={styles.heroImage}
-              />
+              <DiffusionPortraitDynamicImage className={styles.heroImage} />
               <div className={styles.heroRightSide}>
                 <h1 className={styles.heroTitle}>
                   I train and integrate AI models <span>and tools</span>
