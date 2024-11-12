@@ -8,6 +8,7 @@ const nextConfig = {
     includePaths: [path.join(__dirname, "styles")],
     prependData: `@import "src/app/variables.sass"`,
   },
+  reactStrictMode: false,
 };
 
 export default nextConfig;
