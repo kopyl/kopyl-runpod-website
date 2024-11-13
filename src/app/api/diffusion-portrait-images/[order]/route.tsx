@@ -6,7 +6,7 @@ export async function GET(
   req: NextRequest,
   { params }: { params: { order: string } }
 ) {
-  const order = ["0", "3", "6", "9", "12", "15"].includes(params.order)
+  const order = ["0", "1", "3", "5", "8", "11", "16"].includes(params.order)
     ? params.order
     : null;
   if (order == null) {

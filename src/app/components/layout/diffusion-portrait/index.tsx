@@ -16,13 +16,16 @@ export const DiffusionPortraitDynamicImage = ({ className }: any) => {
       });
   };
 
+  ["0", "1", "3", "5", "8", "11", "16"];
+
   useEffect(() => {
     const fetchImages = async () => {
-      await fetchAndSetImage(3);
-      await fetchAndSetImage(6, 1000);
-      await fetchAndSetImage(9, 2000);
-      await fetchAndSetImage(12, 3000);
-      await fetchAndSetImage(15, 4000);
+      await fetchAndSetImage(1);
+      await fetchAndSetImage(3, 1000);
+      await fetchAndSetImage(5, 2000);
+      await fetchAndSetImage(8, 3000);
+      await fetchAndSetImage(11, 4000);
+      await fetchAndSetImage(16, 4000);
     };
 
     fetchImages();
