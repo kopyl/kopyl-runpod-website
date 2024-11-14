@@ -19,7 +19,7 @@ export const DiffusionPortraitDynamicImage = ({ className }: any) => {
     const animateImage = async () => {
       for (const imageId of imageIds) {
         await fetchAndSetImage(imageId);
-        await delay(1000);
+        await delay(300);
       }
     };
     animateImage();
