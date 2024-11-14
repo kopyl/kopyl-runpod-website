@@ -2,33 +2,27 @@
 import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
 
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
 export const DiffusionPortraitDynamicImage = ({ className }: any) => {
   const imageContainer = useRef<HTMLImageElement | null>(null);
   const [imageBase64, setImageBase64] = useState(null);
 
-  const fetchAndSetImage = (id = 0, delay = 0) => {
-    return fetch(`/api/diffusion-portrait-images/${id}`)
-      .then((e) => e.json())
-      .then((value) => {
-        setTimeout(() => {
-          setImageBase64(value["content"]);
-        }, delay);
-      });
+  const fetchAndSetImage = async (id = 0, delay = 0) => {
+    const e = await fetch(`/api/diffusion-portrait-images/${id}`);
+    const value = await e.json();
+    setImageBase64(value["content"]);
   };
 
-  ["0", "1", "3", "5", "8", "11", "16"];
-
   useEffect(() => {
-    const fetchImages = async () => {
-      await fetchAndSetImage(1);
-      await fetchAndSetImage(3, 1000);
-      await fetchAndSetImage(5, 2000);
-      await fetchAndSetImage(8, 3000);
-      await fetchAndSetImage(11, 4000);
-      await fetchAndSetImage(16, 4000);
+    const imageIds = [1, 3, 5, 8, 11, 16];
+    const animateImage = async () => {
+      for (const imageId of imageIds) {
+        await fetchAndSetImage(imageId);
+        await delay(1000);
+      }
     };
-
-    fetchImages();
+    animateImage();
   }, []);
 
   return (
