@@ -20,6 +20,10 @@ const links = [
   ],
 ];
 
+export const Copyright = () => {
+  return <span className={styles.info}>Designed & developed myself</span>;
+};
+
 export const Footer = () => {
   return (
     <div className={styles.footer}>
@@ -32,7 +36,7 @@ export const Footer = () => {
               </Link>
             ))}
           </div>
-          <span className={styles.info}>Designed & developed myself</span>
+          <Copyright />
         </CenteredContainer>
         <CenteredContainer className={styles.footerMobileContainer}>
           <div className={styles.links}>
@@ -52,7 +56,7 @@ export const Footer = () => {
             </div>
           </div>
           <div className={styles.infoColumn}>
-            <span className={styles.info}>Designed & developed myself</span>
+            <Copyright />
           </div>
         </CenteredContainer>
       </SideSafeArea>
