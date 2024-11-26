@@ -25,7 +25,6 @@ export const Footer = () => {
     <div className={styles.footer}>
       <SideSafeArea>
         <CenteredContainer className={styles.footerDesktopContainer}>
-          <span className={styles.info}>Designed & developed myself</span>
           <div className={styles.links}>
             {links.flat().map((link, index) => (
               <Link href={link.href} key={index} className={styles.link}>
@@ -33,7 +32,7 @@ export const Footer = () => {
               </Link>
             ))}
           </div>
-          <span className={styles.info}>I’m not a RunPod employee</span>
+          <span className={styles.info}>Designed & developed myself</span>
         </CenteredContainer>
         <CenteredContainer className={styles.footerMobileContainer}>
           <div className={styles.links}>
@@ -53,7 +52,6 @@ export const Footer = () => {
             </div>
           </div>
           <div className={styles.infoColumn}>
-            <span className={styles.info}>I’m not a RunPod employee</span>
             <span className={styles.info}>Designed & developed myself</span>
           </div>
         </CenteredContainer>

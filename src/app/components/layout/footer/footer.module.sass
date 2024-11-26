@@ -7,11 +7,11 @@
         min-width: max-content
 
     padding: 182px 0 58px 0
-    @media (max-width: 950px)
+    @media (max-width: $size-brakepoint-mobile)
         padding: 141px 20px 141px 20px
 
     .footerDesktopContainer
-        @media (max-width: 950px)
+        @media (max-width: $size-brakepoint-mobile)
             display: none
         
         display: flex
@@ -32,7 +32,7 @@
                     color: rgba(255, 255, 255, 1)
 
     .footerMobileContainer
-        @media (min-width: 951px)
+        @media (min-width: $size-brakepoint-mobile+1)
             display: none
 
         display: flex
